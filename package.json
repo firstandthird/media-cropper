@@ -1,0 +1,55 @@
+{
+  "name": "media-cropper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/media-cropper.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "scriptkit",
+    "build": "scriptkit build",
+    "dev": "scriptkit dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "scriptkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/media-cropper.git"
+  },
+  "keywords": [],
+  "author": "First+Third <code@firstandthird.com> (http://firstandthird.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/media-cropper/issues"
+  },
+  "homepage": "https://github.com/firstandthird/media-cropper#readme",
+  "devDependencies": {
+    "eslint-config-firstandthird": "3.2.0",
+    "eslint-plugin-import": "2.2.0",
+    "scriptkit": "0.2.0"
+  },
+  "scriptkit": {
+    "test": {
+      "enabled": false
+    },
+    "files": {
+      "dist/media-cropper.js": "index.js"
+    },
+    "scripts": {
+      "babel": {
+        "exclude": [
+          "node_modules/tape-rollup/*"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "firstandthird",
+    "env": {
+      "browser": true
+    }
+  },
+  "dependencies": {
+    "domassist": "^1.8.0",
+    "domodule": "^5.1.2"
+  }
+}
