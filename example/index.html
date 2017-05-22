@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="media-cropper" data-module="MediaCropper">
+  <div class="overlay" data-name="overlay">
+    <div class="overlay-inner"></div>
+  </div>
+
+  <div class="resize-container" data-name="container">
+    <div class="resize-handle resize-handle-nw" data-direction="nw"></div>
+    <div class="resize-handle resize-handle-ne" data-direction="ne"></div>
+    <img data-name="source" src="image.jpg" alt="">
+    <div class="resize-handle resize-handle-se" data-direction="se"></div>
+    <div class="resize-handle resize-handle-sw" data-direction="sw"></div>
+  </div>
+
+  <div class="button-crop" data-action="crop">Crop</div>
+</div>
+
+<script src="../dist/media-cropper.js"></script>
+</body>
+</html>
